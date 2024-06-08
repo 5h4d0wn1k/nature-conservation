@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html class="desktop mbr-site-loaded">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v5.9.13, a.mobirise.com">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="./Nature Conservation Website_files/photo-1602410141957-ee70b4739066.jpeg" type="image/x-icon">
+  <meta name="description" content="Promote nature conservation through our beautiful website dedicated to preserving the environment and planting trees.">
+  <title>Nature Conservation Website</title>
+  <link rel="stylesheet" href="./Nature Conservation Website_files/mobirise2.css">
+  <link rel="stylesheet" href="./Nature Conservation Website_files/bootstrap.min.css">
+  <link rel="stylesheet" href="./Nature Conservation Website_files/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="./Nature Conservation Website_files/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="./Nature Conservation Website_files/jarallax.css">
+  <link rel="stylesheet" href="./Nature Conservation Website_files/style.css">
+  <link rel="stylesheet" href="./Nature Conservation Website_files/styles.css">
+  <link rel="stylesheet" href="./Nature Conservation Website_files/style(1).css">
+  <link rel="stylesheet" href="./Nature Conservation Website_files/css2" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;700&display=swap&display=swap"></noscript>
+  <link rel="stylesheet" href="./Nature Conservation Website_files/mbr-additional.css" type="text/css">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://trusted-scripts.example.com; object-src 'none';">
+  <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    /* Existing styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+   .main_wrapper {
+      background-color: #fff;
+      padding: 50px 0;
+    }
+   .container-fluid {
+      max-width: 1200px;
+    }
+   .cardTitle {
+      font-size: 1.5rem;
+    }
+   .mbr-fonts-style {
+      font-size: 1rem;
+    }
+   .item-wrap a {
+      color: #000;
+      text-decoration: none;
+    }
+   .google-map iframe {
+      width: 100%;
+      height: 350px;
+      border: 0;
+    }
+   .footer3 {
+      background-color: #222;
+      color: #fff;
+      padding: 30px 0;
+    }
+   .header-menu {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+   .header-menu-item {
+      display: inline-block;
+      margin: 0 15px;
+    }
+   .header-menu-item a {
+      color: #fff;
+      text-decoration: none;
+    }
+   .copyright {
+      text-align: center;
+      margin-top: 20px;
+    }
+    /* Nature theme styles */
+    body {
+      background-image: linear-gradient(to bottom, #87CEEB, #6495ED);
+    }
+   .main_wrapper {
+      background-image: url('./Nature Conservation Website_files/leaf-pattern.png');
+      background-size: 300px 300px;
+      background-position: center;
+    }
+   .cardTitle {
+      color: #228B22;
+    }
+   .mbr-fonts-style {
+      color: #3E8E41;
+    }
+   .item-wrap a {
+      color: #2E865F;
+    }
+   .google-map iframe {
+      border: 1px solid #228B22;
+    }
+   .footer3 {
+      background-image: url('./Nature Conservation Website_files/tree-pattern.png');
+      background-size: 300px 300px;
+      background-position: center;
+    }
+   .popup {
+      position: fixed;
+      bottom: 20px; /* Adjust this value as needed */
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%; /* Adjust this value as needed */
+      max-width: 400px; /* Adjust this value as needed */
+      background-color: #63dab2;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 9999;
+    }
+   .popup-content {
+      font-size: 14px;
+    }
+   .popup-btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    /* Modal styles */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+    }
+
+    .close-button {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close-button:hover,
+    .close-button:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+  </style>
+  <!-- Google AdSense -->
+  <script data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body class="vsc-initialized">
+  <!-- Navigation -->
+  <section data-bs-version="5.1" class="menu menu2 cid-ueTuAzUoQW" once="menu" id="menu-5-ueTuAzUoQW">
+    <nav class="navbar navbar-dropdown navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="index.html">
+                        <img src="./Nature Conservation Website_files/photo-1602410141957-ee70b4739066.jpeg" alt="SHADOWNIK">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap">
+                    <a class="navbar-caption text-black display-4" href="index.html">SHADOWNIK</a>
+                </span>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link link text-black display-4" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link text-black display-4" href="ads.html">Ads</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link text-black display-4" href="thankyou.html">Thank You</a>
+                    </li>
+                </ul>
+                <div class="navbar-buttons mbr-section-btn">
+                    <a class="btn btn-primary display-4" href="join.html">Join Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</section>
+
+  <!-- Google AdSense Ad -->
+  <section class="adsense-section" style="background-color: #f8f9fa; padding: 50px 0; text-align: center;">
+    <div class="container">
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-XXXXXXXXXXXX"
+           data-ad-slot="XXXXXXXXXX"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+  </section>
+
+  <!-- Other Ad Network Example -->
+  <section class="other-ad-section" style="background-color: #f8f9fa; padding: 50px 0; text-align: center;">
+    <div class="container">
+      <div id="other-ad-network">
+        <a href="https://example.com"><img src="https://via.placeholder.com/728x90" alt="Ad Banner"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section data-bs-version="5.1" class="form5 cid-ueTuAzY1Wk" id="contact-form-3-ueTuAzY1Wk">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 content-head">
+          <div class="mbr-section-head mb-5">
+            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+              <strong>Get in Touch for Advertising</strong>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+          <!-- Contact Form -->
+          <form id="my-form" class="mbr-form form-with-styler" data-form-title="Contact Form">
+            <div class="row">
+              <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
+              <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">Oops...! Some problem!</div>
+            </div>
+            <div class="dragArea row">
+              <!-- Hidden fields for time and date -->
+              <input type="hidden" name="time" id="form-time">
+              <input type="hidden" name="date" id="form-date">
+              <!-- Form Inputs -->
+              <div class="col-md-6 col-sm-12 form-group mb-3" data-for="name">
+                <input type="text" name="name" placeholder="Name" data-form-field="name" class="form-control" required="required" id="name-contact-form-3-ueTuAzY1Wk">
+              </div>
+              <div class="col-md-6 col-sm-12 form-group mb-3" data-for="email">
+                <input type="email" name="email" placeholder="Email" data-form-field="email" class="form-control" required="required" id="email-contact-form-3-ueTuAzY1Wk">
+              </div>
+              <div class="col-md-6 col-sm-12 form-group mb-3" data-for="phone">
+                <input type="tel" name="phone" placeholder="Phone" data-form-field="phone" class="form-control" required="required" id="phone-contact-form-3-ueTuAzY1Wk">
+              </div>
+              <div class="col-md-6 col-sm-12 form-group mb-3" data-for="advertising-goals">
+                <input type="text" name="advertising-goals" placeholder="Advertising Goals" data-form-field="advertising-goals" class="form-control" required="required" id="advertising-goals-contact-form-3-ueTuAzY1Wk">
+              </div>
+              <div class="col-md-6 col-sm-12 form-group mb-3" data-for="budget">
+                <input type="text" name="budget" placeholder="Budget" data-form-field="budget" class="form-control" required="required" id="budget-contact-form-3-ueTuAzY1Wk">
+              </div>
+              <div class="col-12 form-group mb-3" data-for="message">
+                <textarea name="message" placeholder="Message" data-form-field="message" class="form-control" required="required" id="message-contact-form-3-ueTuAzY1Wk"></textarea>
+              </div>
+              <div class="col-12 align-center mbr-section-btn">
+                <button type="submit" class="btn btn-primary display-7" id="my-form-button">Send Message</button>
+              </div>
+              <p id="my-form-status"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Thank You Modal -->
+  <div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="thankYouModalLabel">Thank You!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Thanks for your submission!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section data-bs-version="5.1" class="contacts02 map1 cid-ueTuAzZh5H" id="contacts-2-ueTuAzZh5H">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 content-head">
+                <div class="mbr-section-head mb-5">
+                    <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                        <strong>Contact Us</strong>
+                    </h3>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="card col-12 col-md-12 col-lg-6">
+                <div class="card-wrapper">
+                    <div class="text-wrapper">
+                        
+                        <ul class="list mbr-fonts-style display-7">
+                            <li class="mbr-text item-wrap">
+                            Phone:                                
+                            <a href="tel:+1 123-456-7890" class="text-black">+1 123-456-7890</a></li>
+
+                            <li class="mbr-text item-wrap">WhatsApp: 
+                            <a href="tel:+1 123-456-7890" class="text-black">+1 123-456-7890</a></li> 
+
+                            <li class="mbr-text item-wrap">                            
+                            Email:
+                            <a href="mailto:info@natureallies.com" class="text-black">info@natureallies.com</a>                        
+                            </li>
+
+                            <li class="mbr-text item-wrap">                        
+                            Address:
+                            Ahmedabad India
+                            </li>
+
+                            <li class="mbr-text item-wrap">
+                            Working Hours:
+                            Mon-Fri: 9am-5pm
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="map-wrapper col-md-12 col-lg-6">
+                <div class="google-map"><iframe frameborder="0" style="border:0" src="./Nature Conservation Website_files/embed.html" allowfullscreen=""></iframe></div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <section data-bs-version="5.1" class="footer3 cid-ueTuAzZRZ5" once="footers" id="footer-6-ueTuAzZRZ5">
+    <div class="container">
+        <div class="row">
+            <div class="row-links">
+                
+              </div>
+            <div class="col-12 mt-4">
+                <p class="mbr-fonts-style copyright display-7">© 2024 SHADOWNIK. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>   
+</section>
+  <!-- Mobirise scripts -->
+  <script src="./Nature Conservation Website_files/jquery.min.js.download"></script>
+  <script src="./Nature Conservation Website_files/bootstrap.bundle.min.js.download"></script>
+  <script src="./Nature Conservation Website_files/jarallax.js.download"></script>
+  <script src="./Nature Conservation Website_files/smooth-scroll.js.download"></script>
+  <script src="./Nature Conservation Website_files/index.js.download"></script>
+  <script src="./Nature Conservation Website_files/navbar-dropdown.js.download"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    
+    <!-- Your custom script -->
+  <script>
+      // Function to handle form submission
+      const form = document.getElementById("my-form");
+      const formInputs = document.querySelectorAll("[data-form-input]");
+      const formBtn = document.getElementById("my-form-button");
+      const notification = document.getElementById("my-form-status");
+      form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const formData = new FormData(form);
+       const xhr = new XMLHttpRequest();
+       xhr.open("POST", "https://formspree.io/f/xpzgbzgk", true);
+       xhr.setRequestHeader("Accept", "application/json");
+
+       xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+              // Form submission complete
+              if (xhr.status === 200 || xhr.status === 201) {
+                // Form submission successful
+                notification.innerText = "Thanks for contacting us! We will respond to you as soon as possible.";
+                showThankYouModal();
+              } else {
+                // Form submission failed
+                notification.innerText = "Form submission failed. Please try again later.";
+              }
+      
+              // Show the notification
+             notification.style.display = "block";
+      
+              // Close the notification after 5 seconds (5000 milliseconds)
+             setTimeout(function () {
+               notification.style.display = "none";
+           }, 5000);
+         }
+       };
+      
+       // Send form data
+       xhr.send(formData);
+      });
+
+      // Function to show thank you modal
+      function showThankYouModal() {
+       const thankYouModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+          thankYouModal.show();
+      }
+      // Add event to all form input fields for input validation
+      for (let i = 0; i < formInputs.length; i++) {
+       formInputs[i].addEventListener("input", function () {
+         // Check form validation
+         if (form.checkValidity()) {
+           formBtn.removeAttribute("disabled");
+         } else {
+           formBtn.setAttribute("disabled", "");
+         }
+       });
+      }
+  </script>
+</body>
+</html>
