@@ -19,152 +19,243 @@
   <link rel="stylesheet" href="./Nature Conservation Website_files/mbr-additional.css" type="text/css">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
 <style>
-.navbar-fixed-top {
-  top: auto;
-}
-#mobiriseBanner.container-banner {
-  height: 8rem;
-  opacity: 1;
-  -webkit-animation: 4s linear animationHeight;
-  -moz-animation: 4s linear animationHeight;
-    -o-animation: 4s linear animationHeight;
-       animation: 4s linear animationHeight;
-       transition: all  0.5s;
-}
-#mobiriseBanner.container-banner.container-banner-closing {
-  pointer-events: none;
-  height: 0;
-  opacity: 0;
-  -webkit-animation: 0.5s linear animationClosing;
-  -moz-animation:  0.5s linear animationClosing;
-    -o-animation:  0.5s linear animationClosing;
-       animation:  0.5s linear animationClosing;
-}
-#mobiriseBanner .banner {
-  min-height: 8rem;
-  position:fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: #fff;
-  padding: 10px;
-  opacity:1;
-  -webkit-animation: 4s linear animationBanner;
-  -moz-animation: 4s linear animationBanner;
-    -o-animation: 4s linear animationBanner;
-       animation: 4s linear animationBanner;
-  z-index: 1031;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#mobiriseBanner .banner p {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  animation: none;
-  visibility: visible;
-}
-#mobiriseBanner .buy-license {
-  text-decoration: underline;
-}
-#mobiriseBanner .banner .btn {
-  margin: 0.3rem 0.5rem;
-  animation: none;
-  visibility: visible;
-}
-#notification {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            padding: 5px 10px;
-            background-color: #28a745;
-            color: #fff;
-            border-radius: 2px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            display: none;
-            font-size: 14px;
-            font-weight: bold;
-}
-.success-popup {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            padding: 10px 20px;
-            background-color: #28a745;
-            color: #fff;
-            border-radius: 5px;
-            display: none;
-            z-index: 1000;
-}
-.navbar.opened {
-    z-index: 1032;
-}
-@-webkit-keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 75% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
-@-moz-keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 75% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
-@-o-keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 75% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
-   @keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 75% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
-@-webkit-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 8rem; } }
-@-moz-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 8rem; } }
-@-o-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 8rem; } }
-   @keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 8rem; } }
-   
-@-webkit-keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
-@-moz-keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
-@-o-keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
-@keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
-
-@media(max-width: 767px) {
-  #mobiriseBanner.container-banner {
-    height: 12rem;
-  }
-  #mobiriseBanner .banner {
-    min-height: 12rem;
-  }
-  @-webkit-keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 75% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
-  @-moz-keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 75% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
-  @-o-keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 75% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
-    @keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 75% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
-  @-webkit-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 12rem; } }
-  @-moz-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 12rem; } }
-  @-o-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 12rem; } }
-    @keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 12rem; } }
-
-  @-webkit-keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
-  @-moz-keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
-  @-o-keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
-  @keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
-}
-        /* Optional: Add some styling for smooth scrolling */
-        html {
-            scroll-behavior: smooth;
+    .navbar-fixed-top {
+        top: auto;
+    }
+    #mobiriseBanner.container-banner {
+        height: 8rem;
+        opacity: 1;
+        -webkit-animation: 4s linear animationHeight;
+        -moz-animation: 4s linear animationHeight;
+        -o-animation: 4s linear animationHeight;
+        animation: 4s linear animationHeight;
+        transition: all 0.5s;
+    }
+    #mobiriseBanner.container-banner.container-banner-closing {
+        pointer-events: none;
+        height: 0;
+        opacity: 0;
+        -webkit-animation: 0.5s linear animationClosing;
+        -moz-animation: 0.5s linear animationClosing;
+        -o-animation: 0.5s linear animationClosing;
+        animation: 0.5s linear animationClosing;
+    }
+    #mobiriseBanner .banner {
+        min-height: 8rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #fff;
+        padding: 10px;
+        opacity: 1;
+        -webkit-animation: 4s linear animationBanner;
+        -moz-animation: 4s linear animationBanner;
+        -o-animation: 4s linear animationBanner;
+        animation: 4s linear animationBanner;
+        z-index: 1031;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #mobiriseBanner .banner p {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        animation: none;
+        visibility: visible;
+    }
+    #mobiriseBanner .buy-license {
+        text-decoration: underline;
+    }
+    #mobiriseBanner .banner .btn {
+        margin: 0.3rem 0.5rem;
+        animation: none;
+        visibility: visible;
+    }
+    #notification {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 5px 10px;
+        background-color: #28a745;
+        color: #fff;
+        border-radius: 2px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: none;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .success-popup {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        background-color: #28a745;
+        color: #fff;
+        border-radius: 5px;
+        display: none;
+        z-index: 1000;
+    }
+    .navbar.opened {
+        z-index: 1032;
+    }
+    @-webkit-keyframes animationBanner {
+        0% { opacity: 0; top: -8rem; }
+        75% { opacity: 0; top: -8rem; }
+        100% { opacity: 1; top: 0; }
+    }
+    @-moz-keyframes animationBanner {
+        0% { opacity: 0; top: -8rem; }
+        75% { opacity: 0; top: -8rem; }
+        100% { opacity: 1; top: 0; }
+    }
+    @-o-keyframes animationBanner {
+        0% { opacity: 0; top: -8rem; }
+        75% { opacity: 0; top: -8rem; }
+        100% { opacity: 1; top: 0; }
+    }
+    @keyframes animationBanner {
+        0% { opacity: 0; top: -8rem; }
+        75% { opacity: 0; top: -8rem; }
+        100% { opacity: 1; top: 0; }
+    }
+    @-webkit-keyframes animationHeight {
+        0% { height: 0; }
+        75% { height: 0; }
+        100% { height: 8rem; }
+    }
+    @-moz-keyframes animationHeight {
+        0% { height: 0; }
+        75% { height: 0; }
+        100% { height: 8rem; }
+    }
+    @-o-keyframes animationHeight {
+        0% { height: 0; }
+        75% { height: 0; }
+        100% { height: 8rem; }
+    }
+    @keyframes animationHeight {
+        0% { height: 0; }
+        75% { height: 0; }
+        100% { height: 8rem; }
+    }
+    @-webkit-keyframes animationClosing {
+        0% { height: 8rem; opacity: 1; }
+        30% { height: 8rem; opacity: 0.5; }
+        100% { height: 0; opacity: 0; }
+    }
+    @-moz-keyframes animationClosing {
+        0% { height: 8rem; opacity: 1; }
+        30% { height: 8rem; opacity: 0.5; }
+        100% { height: 0; opacity: 0; }
+    }
+    @-o-keyframes animationClosing {
+        0% { height: 8rem; opacity: 1; }
+        30% { height: 8rem; opacity: 0.5; }
+        100% { height: 0; opacity: 0; }
+    }
+    @keyframes animationClosing {
+        0% { height: 8rem; opacity: 1; }
+        30% { height: 8rem; opacity: 0.5; }
+        100% { height: 0; opacity: 0; }
+    }
+    @media(max-width: 767px) {
+        #mobiriseBanner.container-banner {
+            height: 12rem;
         }
+        #mobiriseBanner .banner {
+            min-height: 12rem;
+        }
+        @-webkit-keyframes animationBanner {
+            0% { opacity: 0; top: -12rem; }
+            75% { opacity: 0; top: -12rem; }
+            100% { opacity: 1; top: 0; }
+        }
+        @-moz-keyframes animationBanner {
+            0% { opacity: 0; top: -12rem; }
+            75% { opacity: 0; top: -12rem; }
+            100% { opacity: 1; top: 0; }
+        }
+        @-o-keyframes animationBanner {
+            0% { opacity: 0; top: -12rem; }
+            75% { opacity: 0; top: -12rem; }
+            100% { opacity: 1; top: 0; }
+	}
+        @keyframes animationBanner {
+            0% { opacity: 0; top: -12rem; }
+            75% { opacity: 0; top: -12rem; }
+            100% { opacity: 1; top: 0; }
+        }
+        @-webkit-keyframes animationHeight {
+            0% { height: 0; }
+            75% { height: 0; }
+            100% { height: 12rem; }
+        }
+        @-moz-keyframes animationHeight {
+            0% { height: 0; }
+            75% { height: 0; }
+            100% { height: 12rem; }
+        }
+        @-o-keyframes animationHeight {
+            0% { height: 0; }
+            75% { height: 0; }
+            100% { height: 12rem; }
+        }
+        @keyframes animationHeight {
+            0% { height: 0; }
+            75% { height: 0; }
+            100% { height: 12rem; }
+        }
+
+        @-webkit-keyframes animationClosing {
+            0% { height: 12rem; opacity: 1; }
+            30% { height: 12rem; opacity: 0.5; }
+            100% { height: 0; opacity: 0; }
+        }
+        @-moz-keyframes animationClosing {
+            0% { height: 12rem; opacity: 1; }
+            30% { height: 12rem; opacity: 0.5; }
+            100% { height: 0; opacity: 0; }
+        }
+        @-o-keyframes animationClosing {
+            0% { height: 12rem; opacity: 1; }
+            30% { height: 12rem; opacity: 0.5; }
+            100% { height: 0; opacity: 0; }
+        }
+        @keyframes animationClosing {
+            0% { height: 12rem; opacity: 1; }
+            30% { height: 12rem; opacity: 0.5; }
+            100% { height: 0; opacity: 0; }
+        }
+    }
+    html {
+        scroll-behavior: smooth;
+    }
 </style>
 </head>
 <body class="vsc-initialized">
   <section data-bs-version="5.1" class="menu menu2 cid-ueTuAzUoQW" once="menu" id="menu-5-ueTuAzUoQW">
-	
-
-	<nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
-		<div class="container">
-			<div class="navbar-brand">
-				<span class="navbar-logo">
-					<a href="https://shadownik.online">
-						<img src="./Nature Conservation Website_files/photo-1602410141957-ee70b4739066.jpeg" alt="Mobirise Website Builder" style="height: 4.3rem;">
-					</a>
-				</span>
-				<span class="navbar-caption-wrap"><a class="navbar-caption text-black display-4" href="https://mobiri.se/">5H4D0W</a></span>
-			</div>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<div class="hamburger">
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="https://shadownik.online">
+                        <img src="./Nature Conservation Website_files/photo-1602410141957-ee70b4739066.jpeg" alt=" Nature Shadownik" style="height: 4.3rem;">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-4" href="https://shadownik.online/">5H4D0W</a></span>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
                     <li class="nav-item">
                         <a class="nav-link link text-black display-4" href="index.html">Home</a>
@@ -177,15 +268,12 @@
                         <a class="nav-link link text-black display-4" href="thankyou.html">ThankYou</a>
                     </li>
                 </ul>
-                
                 <div class="navbar-buttons mbr-section-btn">
                     <a class="btn btn-primary display-4" href="#contact-form-3-ueTuAzY1Wk">Join Now</a>
                 </div>
-                
             </div>
-            
-		</div>
-	</nav>
+        </div>
+    </nav>
 </section>
 
 <section data-bs-version="5.1" class="header16 cid-ueTuAzVeu5 mbr-fullscreen mbr-parallax-background" id="hero-17-ueTuAzVeu5" style="z-index: 0; background-image: none; position: relative;">
@@ -199,7 +287,6 @@
                 <div class="mbr-section-btn">
                     <button class="btn btn-white-outline display-7" id="exploremore">Explore More</button>
                 </div>
-            
             </div>
         </div>
     </div>
@@ -211,21 +298,16 @@
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12 col-md-12 col-lg-6 image-wrapper">
-				<img class="w-100" src="./Nature Conservation Website_files/photo-1600645010467-44e8d349c53b.jpeg" alt="Mobirise Website Builder">
+				<img class="w-100" src="./Nature Conservation Website_files/noah-buscher-x8ZStukS2PM-unsplash.jpg" alt="Mobirise Website Builder">
 			</div>
 			<div class="col-12 col-md-12 col-lg">
 				<div class="text-wrapper align-left">
-            
 					<h1 class="mbr-section-title mbr-fonts-style mb-4 display-2">
 						<strong>Our Mission</strong>
 					</h1>
-					<p class="mbr-text align-left mbr-fonts-style mb-3 display-7">At EcoVibe, we are on a mission to protect and preserve our planet's precious ecosystems.</p>
-
-					<p class="mbr-text align-left mbr-fonts-style mb-3 display-7">Join us in our quest to save endangered species, combat climate change, and create a greener future for all.</p>
-
-					<p class="mbr-text align-left mbr-fonts-style mb-3 display-7">Together, we can make a lasting impact on the world we share. Let's dive into the wild and make a difference today!</p>
-
-					
+					<p class="mbr-text align-left mbr-fonts-style mb-3 display-7">At EcoVibe, we aspire to protect and preserve our planet's precious ecosystems.</p>
+					<p class="mbr-text align-left mbr-fonts-style mb-3 display-7">We're starting from scratch and we want to kick off this journey with you.</p>
+					<p class="mbr-text align-left mbr-fonts-style mb-3 display-7">Together, let's embark on a journey to make a lasting impact on the world we share.</p>
 				</div>
 			</div>
 		</div>
@@ -234,52 +316,99 @@
 
 <section data-bs-version="5.1" class="features38 cid-ueTuAzVnRm" id="features-28-ueTuAzVnRm">
     <div class="container">
+        <!-- Green Initiatives -->
         <div class="row justify-content-center">
             <div class="col-12 col-md-12 col-lg">
                 <div class="text-wrapper align-left">
                     <h1 class="mbr-section-title mbr-fonts-style mb-4 display-2">
                         <strong>Green Initiatives</strong>
                     </h1>
-                    <p class="mbr-text align-left mbr-fonts-style mb-4 display-7">Discover our latest green projects aimed at reforestation, wildlife conservation, and sustainable living practices.</p>
-                    
+                    <p class="mbr-text align-left mbr-fonts-style mb-4 display-7">Let's start green projects together aimed at reforestation, wildlife conservation, and sustainable living practices.</p>
+                    <p class="mbr-text align-left mbr-fonts-style mb-4 display-7">With your participation, we can initiate impactful activities like planting trees at home and in your community, keeping our surroundings clean, and adopting a waste-free lifestyle. Learn how to reuse, recycle, and reduce waste to minimize our ecological footprint.</p>
+                    <p class="mbr-text align-left mbr-fonts-style mb-4 display-7">Together, let's nurture our habitat and protect the environment for future generations.</p>
                 </div>
             </div>
             <div class="col-12 col-md-12 col-lg-6 image-wrapper">
-                <img class="w-100" src="./Nature Conservation Website_files/photo-1451847251646-8a6c0dd1510c.jpeg" alt="Mobirise Website Builder">
+                <img class="w-100" src="./Nature Conservation Website_files/photo-1451847251646-8a6c0dd1510c.jpeg" alt="Nature Shadownik">
             </div>
         </div>
+        <!-- Interactive Campaigns -->
         <div class="row row-reverse justify-content-center">
-
             <div class="col-12 col-md-12 col-lg">
                 <div class="text-wrapper align-left">
                     <h1 class="mbr-section-title mbr-fonts-style mb-4 display-2">
                         <strong>Interactive Campaigns</strong>
                     </h1>
-                    <p class="mbr-text align-left mbr-fonts-style mb-4 display-7">Engage with our interactive campaigns and events to raise awareness and drive positive change for nature conservation.</p>
-                    
+                    <p class="mbr-text align-left mbr-fonts-style mb-4 display-7">Let's shape interactive campaigns and events together to raise awareness and drive positive change for nature conservation.</p>
+                    <p class="mbr-text align-left mbr-fonts-style mb-4 display-7">With your involvement, we can kickstart a vibrant community of eco-warriors, participating in exciting activities aimed at protecting our planet. Your small actions can have a big impact!</p>
                 </div>
             </div>
             <div class="col-12 col-md-12 col-lg-6 image-wrapper">
-                <img class="w-100" src="./Nature Conservation Website_files/photo-1605027538782-c1b60ffa6cef.jpeg" alt="Mobirise Website Builder">
+                <img class="w-100" src="./Nature Conservation Website_files/photo-1605027538782-c1b60ffa6cef.jpeg" alt="Nature Shadownik">
             </div>
         </div>
+        <!-- Community Engagement -->
         <div class="row justify-content-center">
             <div class="col-12 col-md-12 col-lg">
                 <div class="text-wrapper align-left">
                     <h1 class="mbr-section-title mbr-fonts-style mb-4 display-2">
                         <strong>Community Engagement</strong>
                     </h1>
-                    <p class="mbr-text align-left mbr-fonts-style mb-4 display-7">Connect with like-minded individuals, share your passion for nature, and be part of a supportive community dedicated to conservation efforts.</p>
-                    
+                    <p class="mbr-text align-left mbr-fonts-style mb-4 display-7">Let's build a supportive community dedicated to conservation efforts. Connect with like-minded individuals and share your passion for nature.</p>
+                    <p class="mbr-text align-left mbr-fonts-style mb-4 display-7">Be the change you wish to see in the world. Join us in our mission to protect the environment and create a sustainable future for all.</p>
                 </div>
             </div>
             <div class="col-12 col-md-12 col-lg-6 image-wrapper">
-                <img class="w-100" src="./Nature Conservation Website_files/photo-1622832676852-b63ae403266c.jpeg" alt="Mobirise Website Builder">
+                <img class="w-100" src="./Nature Conservation Website_files/photo-1622832676852-b63ae403266c.jpeg" alt="Nature Shadownik">
             </div>
+        </div>
+        <!-- Empowering Individuals -->
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-12 col-lg">
+                <div class="text-wrapper align-left">
+                   <h1 class="mbr-section-title mbr-fonts-style mb-4 display-2">
+                       <strong>Empowering Individuals</strong>
+                    </h1>
+                   <p class="mbr-text align-left mbr-fonts-style mb-4 display-7">Discover your potential to make a difference. Learn about sustainable practices you can incorporate into your daily life and how your choices impact the environment.</p>
+                   <p class="mbr-text align-left mbr-fonts-style mb-4 display-7">Through education and action, each person has the power to contribute to a healthier planet. With your support, we can empower individuals to create positive change.</p>
+               </div>
+            </div>
+           <div class="col-12 col-md-12 col-lg-6 image-wrapper">
+              <img class="w-100" src="./Nature Conservation Website_files/cheng-feng-BP-Q-Z0Ua9Y-unsplash.jpg" alt="Nature Conservation Image">
+           </div>
+        </div>
+        <!-- Environmental Education -->
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-12 col-lg">
+               <div class="text-wrapper align-left">
+                   <h1 class="mbr-section-title mbr-fonts-style mb-4 display-2">
+                       <strong>Environmental Education</strong>
+                   </h1>
+                   <p class="mbr-text align-left mbr-fonts-style mb-4 display-7">Knowledge is the key to fostering a deeper connection with nature and understanding the importance of conservation. Explore our educational resources, workshops, and seminars designed to inspire environmental stewardship.</p>
+                   <p class="mbr-text align-left mbr-fonts-style mb-4 display-7">We are starting from scratch, and with your help, we can create educational programs that empower individuals of all ages to become informed advocates for the planet.</p>
+               </div>
+           </div>
+           <div class="col-12 col-md-12 col-lg-6 image-wrapper">
+               <img class="w-100" src="./Nature Conservation Website_files/christoph-nolte-y0abfwL0Dps-unsplash.jpg" alt="Nature Conservation Image">
+           </div>
+        </div>
+        <!-- Volunteer Opportunities -->
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-12 col-lg">
+              <div class="text-wrapper align-left">
+                   <h1 class="mbr-section-title mbr-fonts-style mb-4 display-2">
+                       <strong>Volunteer Opportunities</strong>
+                   </h1>
+                   <p class="mbr-text align-left mbr-fonts-style mb-4 display-7">We are eager to start volunteer programs, but we need your help to get things going. Whether you're passionate about planting trees, cleaning up local habitats, or advocating for policy change, we invite you to join us and make a real difference.</p>
+                   <p class="mbr-text align-left mbr-fonts-style mb-4 display-7">By volunteering, you'll not only contribute to meaningful projects but also connect with a community of like-minded individuals dedicated to making a difference.</p>
+               </div>
+           </div>
+           <div class="col-12 col-md-12 col-lg-6 image-wrapper">
+              <img class="w-100" src="./Nature Conservation Website_files/people-planting-tree-countryside.jpg" alt="Nature Conservation Image">
+         </div>
         </div>
     </div>
 </section>
-
 
 <section data-bs-version="5.1" class="article13 cid-ueTuAzXaEh" id="call-to-action-3-ueTuAzXaEh">
     <div class="container">
@@ -290,11 +419,9 @@
                         <h4 class="card-title mbr-fonts-style display-2">
                             <strong>Join us in saving the planet!</strong>
                         </h4>
-                        
                         <div class="mbr-section-btn mt-4">
                             <a class="btn btn-primary display-4" href="#contact-form-3-ueTuAzY1Wk">Get Involved</a>
                         </div>
-                        
                     </div>
                 </div>
             </div>
@@ -305,9 +432,7 @@
 <section data-bs-version="5.1" class="image02 cid-ueTuAzXkpv mbr-fullscreen mbr-parallax-background" id="image-13-ueTuAzXkpv" style="z-index: 0; background-image: none; position: relative;">
     <div class="container">
         <div class="row"></div>
-        
         </div>
-        
     </div>
     <div id="jarallax-container-1" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: 100;">
         <div style="background-position: 50% 50%; background-size: cover; background-repeat: no-repeat; background-image: url('https://r.mobirisesite.com/490756/assets/images/photo-1542296803-f4937a45e46b.jpeg'); position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: -0.0600036px; transform: translate3d(0px, -18.585px, 0px);"></div>
@@ -320,41 +445,35 @@
             <strong>Wild Wonders</strong>
           </h5>
           <h6 class="mbr-section-subtitle mbr-fonts-style mt-0 mb-4 display-7">Explore the breathtaking beauty of our conservation projects around the globe. From lush forests to vibrant coral reefs, witness nature at its finest.</h6>
-          
         </div>
-        
       </div>
       <div class="col-lg-8 side-features row">
         <div class="item features-image col-12 col-md-6 col-lg-6 active">
           <div class="item-wrapper">
             <div class="item-img">
-              <img src="./Nature Conservation Website_files/photo-1610918152901-1ac3fa674f25.jpeg" alt="Mobirise Website Builder" title="" data-slide-to="1" data-bs-slide-to="1">
+              <img src="./Nature Conservation Website_files/photo-1610918152901-1ac3fa674f25.jpeg" alt="Nature" title="" data-slide-to="1" data-bs-slide-to="1">
             </div>
-            
           </div>
         </div>
         <div class="item features-image col-12 col-md-6 col-lg-6 active">
           <div class="item-wrapper">
             <div class="item-img">
-              <img src="./Nature Conservation Website_files/photo-1598886432334-f178fd7be8a4.jpeg" alt="Mobirise Website Builder" title="" data-slide-to="2" data-bs-slide-to="2">
+              <img src="./Nature Conservation Website_files/photo-1598886432334-f178fd7be8a4.jpeg" alt="Nature" title="" data-slide-to="2" data-bs-slide-to="2">
             </div>
-            
           </div>
         </div>
         <div class="item features-image col-12 col-md-6 col-lg-6 active">
           <div class="item-wrapper">
             <div class="item-img">
-              <img src="./Nature Conservation Website_files/photo-1522584106367-c11223702a33.jpeg" alt="Mobirise Website Builder" title="" data-slide-to="3" data-bs-slide-to="3">
+              <img src="./Nature Conservation Website_files/photo-1522584106367-c11223702a33.jpeg" alt="Nature" title="" data-slide-to="3" data-bs-slide-to="3">
             </div>
-            
           </div>
         </div>
         <div class="item features-image col-12 col-md-6 col-lg-6 active">
           <div class="item-wrapper">
             <div class="item-img">
-              <img src="./Nature Conservation Website_files/photo-1598557928058-3e432c97dc85.jpeg" alt="Mobirise Website Builder" title="" data-slide-to="4" data-bs-slide-to="4">
+              <img src="./Nature Conservation Website_files/photo-1598557928058-3e432c97dc85.jpeg" alt="Nature" title="" data-slide-to="4" data-bs-slide-to="4">
             </div>
-            
           </div>
         </div>
       </div>
@@ -368,44 +487,43 @@
       <div class="card col-md-12 col-lg-10">
         <div class="card-wrapper">
           <div class="image-wrapper d-flex justify-content-center mb-4">
-            <img src="./Nature Conservation Website_files/photo-1605027538720-37afa8b9fc39.jpeg" alt="Mobirise Website Builder">
+            <img src="./Nature Conservation Website_files/photo-1605027538720-37afa8b9fc39.jpeg" alt="Nature Shadownik">
           </div>
           <div class="card-content-text">
             <h3 class="card-title mbr-fonts-style mbr-white mt-3 mb-4 display-2">
-            <strong>Wildlife Warriors</strong>
-          </h3>
-          <div class="row card-box align-left">
-            <div class="item features-without-image col-12">
-              <div class="item-wrapper">
-                
-                <p class="mbr-text mbr-fonts-style display-7">Welcome to the realm of nature's defenders! Dive into the vibrant world of conservation where every action counts towards preserving our planet's precious ecosystems.</p>
-              </div>
-            </div>
-            <div class="item features-without-image col-12">
-              <div class="item-wrapper">
-                
-                <p class="mbr-text mbr-fonts-style display-7">Join us in the battle to protect endangered species, restore habitats, and combat climate change. Together, we can make a difference and ensure a sustainable future for all living beings on Earth!</p>
-              </div>
-            </div>
-            <div class="item features-without-image col-12">
-              <div class="item-wrapper">
-
-                <p class="mbr-text mbr-fonts-style display-7">Explore our website to discover how you can become a true Wildlife Warrior and contribute to the noble cause of nature conservation.</p>
-              </div>
-            </div>
-            <div class="item features-without-image col-12">
+              <strong>Wildlife Warriors</strong>
+            </h3>
+            <div class="row card-box align-left">
+              <div class="item features-without-image col-12">
                 <div class="item-wrapper">
-                  <p class="mbr-text mbr-fonts-style display-7">Please complete this survey to connect more with us.</p>
+                  <p class="mbr-text mbr-fonts-style display-7">Welcome to the realm of nature's defenders! We're just getting started, and we need your help to make a real impact. Every action counts towards preserving our planet's precious ecosystems.</p>
                 </div>
               </div>
-            <div  data-sa-url="https://c2e19f73-3fde-47c7-8652-3041aa001dac.scoreapp.com/?sa_target=_top" data-sa-view="inline" style="max-width: 100%; width: 100%" data-sa-auto-height="1"></div><script src="https://static.scoreapp.com/js/integration/v1/embedding.js?v=gZctvA"></script>
-          </div>
+              <div class="item features-without-image col-12">
+                <div class="item-wrapper">
+                  <p class="mbr-text mbr-fonts-style display-7">Join us in the battle to protect endangered species, restore habitats, and combat climate change. Together, we can launch initiatives that ensure a sustainable future for all living beings on Earth!</p>
+                </div>
+              </div>
+              <div class="item features-without-image col-12">
+                <div class="item-wrapper">
+                  <p class="mbr-text mbr-fonts-style display-7">Explore our website to learn how you can become a true Wildlife Warrior and contribute to the noble cause of nature conservation. Your involvement is crucial to our mission.</p>
+                </div>
+              </div>
+              <div class="item features-without-image col-12">
+                <div class="item-wrapper">
+                  <p class="mbr-text mbr-fonts-style display-7">Please complete this survey to connect with us and let us know how you want to get involved. Together, we can start making a difference today.</p>
+                </div>
+              </div>
+              <div data-sa-url="https://c2e19f73-3fde-47c7-8652-3041aa001dac.scoreapp.com/?sa_target=_top" data-sa-view="inline" style="max-width: 100%; width: 100%" data-sa-auto-height="1"></div>
+              <script src="https://static.scoreapp.com/js/integration/v1/embedding.js?v=gZctvA"></script>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+	
 <section data-bs-version="5.1" class="features023 cid-ueTuAzYP4U" id="metrics-1-ueTuAzYP4U">
     <div class="container">
         <div class="row content-row justify-content-center">
@@ -418,7 +536,6 @@
                     <h4 class="card-title mbr-fonts-style display-5">
                         <strong>Species Saved</strong>
                     </h4>
-                    
                 </div>
             </div>
             <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
@@ -430,7 +547,6 @@
                     <h4 class="card-title mbr-fonts-style display-5">
                         <strong>Trees Planted</strong>
                     </h4>
-                    
                 </div>
             </div>
             <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
@@ -442,16 +558,13 @@
                     <h4 class="card-title mbr-fonts-style display-5">
                         <strong>Volunteers Engaged</strong>
                     </h4>
-                    
                 </div>
             </div>
         </div>
     </div>
 </section>
-
+	
 <section data-bs-version="5.1" class="list1 cid-ueTuAzY8R0" id="faq-1-ueTuAzY8R0">
-    
-    
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-md-12 col-lg-10 m-auto">
@@ -462,7 +575,6 @@
                                 <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
                                     <strong>Curious Minds Ask</strong>
                                 </h4>
-                                
                             </div>
                         </div>
                     </div>
@@ -532,13 +644,13 @@
                                 </div>
                             </div>
                         </div>
-                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+	
 <section data-bs-version="5.1" class="form5 cid-ueTuAzY1Wk" id="contact-form-3-ueTuAzY1Wk">
     <div class="container">
         <div class="row justify-content-center">
@@ -552,13 +664,11 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
-                <!-- Replace this div with your iframe code -->
                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfxL_12wujnkoPKfgtYGCPi5-C0qYjGkanyO54xvohoOfhvOA/viewform?embedded=true" width="640" height="2844" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
         </div>
     </div>
 </section>
-
 <div id="notification">Thanks for filling out the form!</div>
 <section data-bs-version="5.1" class="contacts02 map1 cid-ueTuAzZh5H" id="contacts-2-ueTuAzZh5H">
     <div class="container">
@@ -568,7 +678,6 @@
                     <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
                         <strong>Connect with Us</strong>
                     </h3>
-                    
                 </div>
             </div>
         </div>
@@ -592,13 +701,14 @@
     <div class="container">
         <div class="row">
             <div class="row-links">
-               
             <div class="col-12 mt-4">
                 <p class="mbr-fonts-style copyright display-7">© 2024 SHADOWNIK. All Rights Reserved.</p>
             </div>
         </div>
     </div>
 </section>
+
+	
   <script src="./Nature Conservation Website_files/jquery.min.js.download"></script>
   <script src="./Nature Conservation Website_files/bootstrap.bundle.min.js.download"></script>
   <script src="./Nature Conservation Website_files/jarallax.js.download"></script>
@@ -672,11 +782,11 @@
             }, 3000); // 3000 milliseconds (3 seconds)
         }
     });
-</script>
-<script>
+   </script>
+   <script>
     document.getElementById('exploremore').addEventListener('click', function() {
         document.getElementById('about-us-2-ueTuAzVe8T').scrollIntoView({ behavior: 'smooth' });
         });
-</script>
+   </script>
 </body>
 </html>
