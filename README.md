@@ -70,5 +70,5 @@ Keep the site static and dependency-light.
 
 ## License
 
-This repository does not currently ship a `LICENSE` file; confirm terms with
-the owner before reuse.
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
